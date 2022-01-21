@@ -36,7 +36,7 @@ function validateLogin(callback) {
     });
 }
 
-function register(name, email, password, callbackSuccess, callbackError) {
+function register(firstname, email, password,lastname,number,Birthday, callbackSuccess, callbackError) {
     $.ajax({
         type: "POST",
         contentType: "application/json",
@@ -45,9 +45,12 @@ function register(name, email, password, callbackSuccess, callbackError) {
         },
         url: serviceEndpointURL + "/user/register",
         data: JSON.stringify({
-            "name": name,
-            "email": email,
-            "password": password
+            "firstName": firstname,
+            "lastName": lastname,
+            "password": password,
+            "birthday": Birthday,
+            "mobile": number,
+            "email": email
         }),
         success: function () {
             callbackSuccess(true);

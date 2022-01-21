@@ -50,7 +50,7 @@ public class WebSecurityConfigTest extends WebSecurityConfigurerAdapter {
         Agent agentUser = new Agent();
         agentUser.setEmail("user@user.com");
         agentUser.setPassword("password");
-        agentUser.setName("user");
+        agentUser.setFirstName("user");
         agentService.saveAgent(agentUser);
     }
 }

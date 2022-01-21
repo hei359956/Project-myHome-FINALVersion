@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -20,7 +21,18 @@ public class Agent {
 	@GeneratedValue
 	private Long id;
 	@NotEmpty(message = "Please provide a name.")
-	private String name;
+	private String firstName;
+
+	@Column(name = "last_name", nullable = false, length = 30)
+	private String lastName;
+
+	@Temporal(TemporalType.DATE)
+	@Column(name = "birthday")
+	private Date birthday;
+
+	@Column(name = "mobile", nullable = false)
+	private int mobile;
+
 	@Email(message = "Please provide a valid e-mail.")
 	@NotEmpty(message = "Please provide an e-mail.")
 	private String email;
@@ -34,6 +46,30 @@ public class Agent {
 	@JsonIgnore
 	private List<Customer> customers;
 
+	public int getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(int mobile) {
+		this.mobile = mobile;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -42,12 +78,12 @@ public class Agent {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getEmail() {
