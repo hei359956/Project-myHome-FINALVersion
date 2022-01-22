@@ -6,6 +6,8 @@ This is a minimal CRM Web App using the fictive furniture store "MyHome" as a ba
 - Leonardo Cepeda Carranza
 - Jithin Ureath
 
+! THIS README IS BASED ON THE TEMPLETE FROM ANDREAS MARTIN
+
 
 [![License](https://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Deploy to Heroku](https://img.shields.io/badge/deploy%20to-Heroku-6762a6.svg?longCache=true)](https://heroku.com/deploy)
@@ -50,6 +52,7 @@ As a furnitre store, customers are able to look at our current offerings but als
 - UC-1 [Login on MyHome]: Customers can log-in by entering an email address and password. As an extension, new customers can register first.
 - UC-2 [Register on MyHome]: Customers can register to get an account (profile) to access the MyHome system.
 - UC-3 [Edit a profile]: Customers can update their profile and change information on it.
+- UC-4 [Store a product in cart]: Customers can put a product in the shopping cart and interact with it there.
 
 ## Design
 
@@ -61,68 +64,16 @@ In this case, the prototype application Bootstrap Studio has been used to create
 
 The assets (HTML, CSS, JavaScript, image and font files) has been exported and will be extended in the later during implementation with jQuery, to build a dynamic website.
 
-### Domain Design
-
-The `ch.fhnw.acrm.data.domain` package contains the following domain objects / entities including getters and setters:
-
-![](images/domain-model.png)
-
-### Business Logic Design
-
-The `ch.fhnw.acrm.business.service` package contains classes of the following business services:
-
-![](images/business-service.png)
-
 ### Endpoint Design
-**Path**: [`/api/customer`](/api/customer) 
-
-**Method:** `POST`
-
-**Sample Request**  • *Header:* `Content-Type: application/json` • *Body:*
-
-```JSON
-{
-  "agent": {
-    "customers": [
-      null
-    ],
-    "email": "string",
-    "id": 0,
-    "name": "string",
-    "password": "string",
-    "remember": "string"
-  },
-  "email": "string",
-  "id": 0,
-  "mobile": "string",
-  "name": "string"
-}
-```
-
-• *Optional:* `...`
-  
-**Success Response**  • *Code:* `200 OK` • *Sample Body:*
-
-```JSON
-{
-  "agent": {
-    "customers": [
-      null
-    ],
-    "email": "string",
-    "id": 0,
-    "name": "string",
-    "password": "string",
-    "remember": "string"
-  },
-  "email": "string",
-  "id": 0,
-  "mobile": "string",
-  "name": "string"
-}
-```
-
-**Error Response** • *Code:* `404 NOT FOUND`
+- Home
+- About
+- Shop
+    - "Various Items"
+- Contact
+- User Login
+    - Register
+    - Login
+    - Change Account Credentials
 
 ## Implementation
 
@@ -180,12 +131,13 @@ This Web application is relying on the following frontend technology/libraries:
 
 - jQuery
 - Bootstrap
+- Visual Studio Code
 
 ## Deployment
 This spring boot has been deployed to Heroku by using a pre-configuration scripts `app.json` and `Procfile`.
 
 ## User Guide
-The Web application can be accessed over the browser by using the following address: `https://***.herokuapp.com/`. And the Swagger-UI can be access using the specific page: `https://***.herokuapp.com/swagger-ui/`.
+The Web application can be accessed over the browser by using the following address: `https://myhome-project-1.herokuapp.com`.
 
 ## Project Management
 
@@ -206,6 +158,7 @@ The Web application can be accessed over the browser by using the following addr
 
 ## Reflection
 
+This WebApp assignment was quite challenging for our group. None of us had any web development experience and we were struggling quite a lot. In addition to some personal family matters, we also had a change in our teams and gained a new member. An additional challenge since the member is not located on the same continent and trying to find a suitable time for everybody to meed up and work was not easy. Closer to the end, we were struggling with implenting all the features properly and bug-free aswell. Overall we are grateful to be able to start this journey but are also aware that the product we are delivering is not the best, but the best we could do.
 
 
 #### Maintainer
