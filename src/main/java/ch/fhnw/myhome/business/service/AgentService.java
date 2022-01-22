@@ -21,7 +21,6 @@ import javax.validation.Validator;
 @Validated
 public class AgentService {
 
-    //Hello
     @Autowired
     private AgentRepository agentRepository;
     @Autowired
