@@ -1,11 +1,15 @@
-# A-CRM Web App
+# A MyHome CRM Web App
 
-This is a minimal CRM Web App (A-CRM - Insurance Agency CRM) as a template for students. 
+This is a minimal CRM Web App using the fictive furniture store "MyHome" as a basis. This project was created and developed by:
+- Carla Kaufmann
+- Flavio Heim
+- Leonardo Cepeda Carranza
+- Jithin Ureath
+
 
 [![License](https://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Deploy to Heroku](https://img.shields.io/badge/deploy%20to-Heroku-6762a6.svg?longCache=true)](https://heroku.com/deploy)
 
-> 🚧 **This is a template project**: Make sure that you adapt this documentation and the source code in this project according to your needs and use case.
 
 #### Contents:
 - [Analysis](#analysis)
@@ -25,29 +29,27 @@ This is a minimal CRM Web App (A-CRM - Insurance Agency CRM) as a template for s
 - [Project Management](#project-management)
   - [Roles](#roles)
   - [Milestones](#milestones)
+- [Reflection](#reflection)
 
 ## Analysis
 
 ### Scenario
 
-A-CRM (Agency Customer-Relationship-Management) is the smallest possible and lightweight demonstration tool that allows agents to manage their customer data. Agents have an own access to their customer data.
+As a furnitre store, customers are able to look at our current offerings but also login into their account to be able to make the purchase. All the login and customer related data will be stored in the database.
 
 ### User Stories
-1.	As an insurance agent, I want to have a Web app so that I can use it on different mobile devices and on desktop computers.
-2.	As an insurance agent, I want to see a consistent visual appearance so that I can navigate easily, and it looks consistent.
-3.	As an insurance agent, I want to use list views so that I can explore and read my business data.
-4.	As an insurance agent, I want to use edit and create views so that I can maintain my business data.
-5.	As an insurance agent, I want to create an account so that I can get access to the Web app.
-6.	As an insurance agent, I want to log-in so that I can authenticate myself.
-7.	As an insurance agent, I want to edit my profile so that my data is stored securely.
+1.	As a customer, I want to have a simple and easy shopping experience.
+2.	As a customer, I would also like to be able to state what I need, e.g. a table and then different recommendations will be suggested to me.
+3.	As a customer, I want to create an account so that I can get access to the Web app.
+4.	As a customer, I want to log-in so that I can authenticate myself.
+5.	As a customer, I want to edit my profile so that my data is stored securely.
 
 ### Use Case
 ![](images/use-case.png)
 
-- UC-1 [Login on A-CRM]: Agents can log-in by entering an email address and password. As an extension, new agents my register first.
-- UC-2 [Register on A-CRM]: Agents can register to get an account (profile) to access the A-CRM system.
-- UC-3 [Edit a customer]: Agents can create, update and delete customers.
-- UC-4 [Show a customer list]: Agents can get an overview over their customers based on a customer list. As an extension they can create, update and delete customers (UC-3).
+- UC-1 [Login on MyHome]: Customers can log-in by entering an email address and password. As an extension, new customers can register first.
+- UC-2 [Register on MyHome]: Customers can register to get an account (profile) to access the MyHome system.
+- UC-3 [Edit a profile]: Customers can update their profile and change information on it.
 
 ## Design
 
@@ -188,7 +190,10 @@ The Web application can be accessed over the browser by using the following addr
 ## Project Management
 
 ### Roles
-- All-rounder 😉: [Andreas Martin](https://andreasmartin.ch)
+- All-rounder: [Carla Kaufmann](https://www.linkedin.com/in/carla-kaufmann-371167154/)
+- Database Developer: [Flavio Heim](https://github.com/FHeim)
+- Website Developer: [Leonardo Cepeda Carranza](https://www.linkedin.com/in/leonardo-c-3a5042b8/)
+- Business Analyst: [Jithin Ureath](https://ch.linkedin.com/in/jithin-ureath-10340b1a6)
 
 ### Milestones
 1. **Analysis**: Scenario ideation, use case analysis and user story writing.
@@ -199,8 +204,12 @@ The Web application can be accessed over the browser by using the following addr
 6. **Security and Frontend Implementation**: Integration of security framework and frontend realisation.
 7. **Deployment**: Deployment of Web application on cloud infrastructure.
 
+## Reflection
+
+
+
 #### Maintainer
-- [Andreas Martin](https://andreasmartin.ch)
+- [Carla Kaufmann](https://github.com/hei359956)
 
 #### License
 - [Apache License, Version 2.0](blob/master/LICENSE)
