@@ -18,4 +18,14 @@ public class IndexController {
         return "index.html";
     }
 
+    @GetMapping ("/about")
+    public String getAbout(){
+        return "myhome/about.html";
+    }
+
+    @GetMapping("/contact")
+    public String getContact(){
+        return "myhome/contact.html";
+    }
+
 }
