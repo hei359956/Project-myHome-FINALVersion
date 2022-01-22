@@ -29,6 +29,7 @@ This is a minimal CRM Web App using the fictive furniture store "MyHome" as a ba
 - [Project Management](#project-management)
   - [Roles](#roles)
   - [Milestones](#milestones)
+- [Reflection](#reflection)
 
 ## Analysis
 
@@ -190,8 +191,8 @@ The Web application can be accessed over the browser by using the following addr
 
 ### Roles
 - All-rounder: [Carla Kaufmann](https://www.linkedin.com/in/carla-kaufmann-371167154/)
-- Database Developer: [Flavio Heim]
-- Website Developer: [Leonardo Cepeda Carranza]
+- Database Developer: [Flavio Heim](https://github.com/FHeim)
+- Website Developer: [Leonardo Cepeda Carranza](https://www.linkedin.com/in/leonardo-c-3a5042b8/)
 - Business Analyst: [Jithin Ureath](https://ch.linkedin.com/in/jithin-ureath-10340b1a6)
 
 ### Milestones
@@ -203,8 +204,12 @@ The Web application can be accessed over the browser by using the following addr
 6. **Security and Frontend Implementation**: Integration of security framework and frontend realisation.
 7. **Deployment**: Deployment of Web application on cloud infrastructure.
 
+## Reflection
+
+
+
 #### Maintainer
-- [Andreas Martin](https://andreasmartin.ch)
+- [Carla Kaufmann](https://github.com/hei359956)
 
 #### License
 - [Apache License, Version 2.0](blob/master/LICENSE)
