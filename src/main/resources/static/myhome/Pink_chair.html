@@ -1055,6 +1055,25 @@
 
 <script src="../assets/js/bootstrap.js"></script>
 <!-- js file -->
+
+<script src="../assets/js/webapp.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        validateLogin(function (result) {
+            if (result) {
+                $("#login_element").show()
+                $("#user_element").hide()
+            } else {
+                $("#login_element").hide()
+                $("#user_element").show()
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
